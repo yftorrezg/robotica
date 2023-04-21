@@ -6,7 +6,10 @@ void setup() {
 }
 
 void loop() {
-  // analog Write(,) : 2 parametros pin,valor(nº entero 0 a 255) o es low 255 es high 127= 2.5 voltios
+  //  analog Write(,) : 2 parametros: ( pin , valor(0-255) ) 
+  //  0: low 
+  //  255: high 
+  //  127= 2.5 voltios
   
   /*analogWrite(led,255);
   delay(500);
@@ -35,3 +38,10 @@ void loop() {
     delay(100);
   }
 }
+/*
+digitalWrite: Controla pines en dos estados (0 o 1).
+analogWrite: Controla pines en valores analógicos (0 a 255).
+digitalWrite es para dispositivos binarios.
+analogWrite es para dispositivos que requieren niveles intermedios.
+No todos los pines son compatibles con analogWrite y la precisión varía.
+*/
